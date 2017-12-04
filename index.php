@@ -23,9 +23,30 @@ require_once("config.php");
 //echo json_encode(($search));
 
 // Seleciona um usuário usando o login e a senha:
+//$usuario = new Usuario();
+//$usuario->login("TONICO","999999");
+//echo $usuario;
+
+// Inserir um registro novo:
+
+//$aluno = new Usuario();
+
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@lun0");
+//$aluno->insert();
+//echo $aluno;
+
+// Outra forma de inserir um registro:
+//$aluno = new Usuario("Zulmira","112233");
+//$aluno->insert();
+//echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("TONICO","999999");
+
+$usuario->loadById(24);
+$usuario->update("Claudia","145541");
 echo $usuario;
 
+// 
 
  ?>
