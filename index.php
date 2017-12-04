@@ -39,14 +39,21 @@ require_once("config.php");
 // Outra forma de inserir um registro:
 //$aluno = new Usuario("Zulmira","112233");
 //$aluno->insert();
-//echo $aluno;
+//echo $aluno
+
+
+// Alterar um usuario:
+//$usuario = new Usuario();
+//$usuario->loadById(24);
+//$usuario->update("Claudia","145541");
+//echo $usuario;
+
+// Excluir um registro
 
 $usuario = new Usuario();
-
-$usuario->loadById(24);
-$usuario->update("Claudia","145541");
+$usuario->loadById(17);
+$usuario->delete();
 echo $usuario;
-
 // 
 
  ?>
